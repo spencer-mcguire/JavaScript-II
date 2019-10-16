@@ -110,3 +110,4 @@ runners.forEach(function(items){
   return announce.push(`${items.first_name} ${items.company_name}`)
 });
 console.log(announce);
+
