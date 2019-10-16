@@ -30,8 +30,8 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
   // TEST 1 (inlined callback):
 
-  const test1 = firstItem(items, item => `I love my ${item}!`);
-  console.log(test1); // "I love my Pencil!"
+  constfirstItem(items, item => `I love my ${item}!`);
+  console.log(test1); // "I love my Pencil!" test1 = 
 
   // TEST 2 (declaring callback before hand):
 
@@ -51,6 +51,7 @@ function getLength(arr, cb) {
 getLength(items, (length) => {
   console.log(length);
 });
+console.log(length);
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
