@@ -4,6 +4,18 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function sayHi(name){
+  console.log(`Hello, ${name}`);
+
+  function weather(weather){
+    console.log(`The weather is ${weather} today.`);
+
+    function time(time){
+      console.log(`It is currently ${time}.`);
+
+    }; time('1:29');
+  }; weather('warm');
+}; sayHi('Spencer');
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
